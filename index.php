@@ -14,22 +14,19 @@
         </div>
     </div>
     <div class="px-1.5 py-1.5">
-        <p class='text-center text-gray-500'>
-            Vous devez choisir deux fichier pour la compilation
-        </p>
     </div>
-    <div class="grid grid-cols-5 grid-flow-col gap-4 text-center mt-4 ml-40 items-center">
-        <form action="controller/controller.php" enctype="multipart/form-data" method="post" action="accueil.php?action=posting/conversion">
-            <div  class="">
+    <div class="  mt-4 items-center  w-3/4 pl">
+        <form class="flex flex-wrap" action="controller/controller.php" enctype="multipart/form-data" method="post" action="accueil.php?action=posting/conversion">
+            <div  class="col-span-1 mt-8">
                 <label for="">Input file :</label>
-                <input type="file" class="text-white active:bg-blueGray-600 text-sm font-bold  px-2 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150 palette1 py-2" name="input">
+                <input type="file" class="text-white active:bg-blueGray-600 text-sm font-bold  px-2 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150 palette1 py-2 w-1/2 cursor-pointer" name="input">
             </div>
-            <div class="">
+            <div class="col-span-1 mt-8">
                 <label for="">Output  file :</label>
-                <input type="file" class="text-white active:bg-blueGray-600 text-sm font-bold  px-2 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 palette1 py-2" value="Selectionner" name="output">
+                <input type="file" class="text-white active:bg-blueGray-600 text-sm font-bold  px-2 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 palette1 py-2 w-1/2 cursor-pointer" value="Selectionner" name="output">
             </div>
-            <div>
-                <input type=submit class="text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 mt-8  ease-linear transition-all duration-150 palette1 ml-80" value="Compiler"/>
+            <div class="col-span-3 mt-8 ">
+                <input type=submit class="text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1   ease-linear transition-all duration-150 bg-teal-700 cursor-pointer align-left pl2" value="Compiler"/>
             </div>
         </form>
     </div>

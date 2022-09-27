@@ -9,6 +9,12 @@
 
    <body>
         <style>
+         .pl2{
+            margin-left:295%;
+         }
+         .pl{
+            margin-left:12%;
+         }
         .palette1 {background-color: #250189;}
         </style>
       <?= $content ?>
