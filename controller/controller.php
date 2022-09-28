@@ -23,7 +23,7 @@ try {
                     try {
                         move_uploaded_file($_FILES['input']['tmp_name'], '../uploads/' . basename($_FILES['input']['name']));
                         move_uploaded_file($_FILES['output']['tmp_name'], '../uploads/' . basename($_FILES['output']['name']));
-//--------------------------------------------
+                        //--------------------------------------------algo de comparaison---------------------------------------
                         
                         $file1 = "../uploads/".basename($_FILES['input']['name']);
                         $file2 = "../uploads/".basename($_FILES['output']['name']);
@@ -68,7 +68,7 @@ try {
                         unlink($file2);
                                                 
                         
-//--------------------------------                     
+                    //--------------------------------                     
 
                     } catch (Exception $e) {
                         echo $e -> getMessage();
@@ -84,7 +84,7 @@ try {
                     }
                     require_once('../view/result.php');
                 }else{
-                    echo "Non c'est pas ok";
+                    echo "Verifier le type de l'un de votre fichier";
                 }
             
             }else{
